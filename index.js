@@ -16,9 +16,10 @@ function getImage(){
 
     fetch(`https://dog.ceo/api/breed/${breeds}/images/random`)
     .then((response) => {
-      if (response.status >= 400) {
+      if (response.status >= 400 ) {
         //throw Error(response.statusText);
-       
+      
+
         alert('Please add a valid breed from list')
         
       
@@ -28,7 +29,7 @@ function getImage(){
     .then((responseJson) => createImages(responseJson))
       
       
-     ///catch(error =>alert('Something went wrong, try again later'))
+     .catch(error =>alert('Something went wrong, try again later'))
   }
 // a function that renders the picture
 
