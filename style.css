@@ -22,7 +22,15 @@ form {
     display: none; 
 }
 
-img {
+img{
+    margin-left: 30%;
 
-    height: 200px;
+    height: 400px;
 }
+
+h3 {
+
+    text-align: center;
+}
+
+
